@@ -4,7 +4,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const blogPost = path.resolve(`./src/templates/blog-post.jsx`);
+  const blogPostTemplate = path.resolve(`./src/templates/blog-post.jsx`);
   const result = await graphql(
     `
       {
@@ -28,10 +28,10 @@ exports.createPages = async ({ graphql, actions }) => {
   );
 
   if (result.errors) {
-    throw result.errors;
+    throw new Error(result.errors);
   }
 
-  // Create blog posts pages.
+  // Create blog post pages.
   const posts = result.data.allMarkdownRemark.edges;
 
   posts.forEach((post, index) => {
@@ -40,7 +40,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     createPage({
       path: post.node.fields.slug,
-      component: blogPost,
+      component: blogPostTemplate,
       context: {
         slug: post.node.fields.slug,
         previous,
@@ -65,6 +65,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
+  
+  // Define custom types for GraphQL schema
   const typeDefs = `
     type SiteSiteMetadata {
       siteUrl: String
@@ -101,5 +103,6 @@ exports.createSchemaCustomization = ({ actions }) => {
       slug: String
     }
   `;
+  
   createTypes(typeDefs);
 };
