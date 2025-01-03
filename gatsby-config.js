@@ -3,19 +3,19 @@ module.exports = {
     // Site URL for when it goes live
     siteUrl: `https://elastic-meninsky-aa7c74.netlify.app/`,
     // Your Name
-    name: 'Ryan Fitzgerald',
+    name: 'Tushar Raja',
     // Main Site Title
-    title: `Ryan Fitzgerald | Full-Stack Developer`,
+    title: `Tushar Raja | 4th Year Biotechnology @ BPDC`,
     // Description that goes under your name in main bio
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit, ipsum.`,
+    description: `4th Year Biotech @ BITS Pilani, Dubai | Immunology | Bioinformatics`,
     // Optional: Twitter account handle
-    author: `@rfitzio`,
+    //author: `@rfitzio`,
     // Optional: Github account URL
-    github: `https://github.com/ryanfitzgerald`,
+    //github: `https://github.com/ryanfitzgerald`,
     // Optional: LinkedIn account URL
-    linkedin: `https://www.linkedin.com/in/ryanafitzgerald/`,
+    linkedin: `https://www.linkedin.com/in/tushar-raja-ab5a32221/`,
     // Content of the About Me section
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
+    about: `Hi! I’m Tushar, currently a 3rd year Biotechnology undergrad at BITS Pilani, Dubai Campus. My interests include immunology and related fields such as inflammation and cancer biology. I’ve also been recently been getting into bioinformatics due to its ever growing nature. Let's connect and form meaningful connections while we can!`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
