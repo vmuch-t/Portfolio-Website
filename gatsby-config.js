@@ -8,15 +8,11 @@ module.exports = {
     title: `Tushar Raja | 4th Year Biotechnology @ BPDC`,
     // Description that goes under your name in main bio
     description: `4th Year Biotech @ BITS Pilani, Dubai | Immunology | Bioinformatics`,
-    // Optional: Twitter account handle
-    //author: `@rfitzio`,
-    // Optional: Github account URL
-    //github: `https://github.com/ryanfitzgerald`,
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/tushar-raja-ab5a32221/`,
     // Content of the About Me section
-    about: `Hi! I’m Tushar, currently a 3rd year Biotechnology undergrad at BITS Pilani, Dubai Campus. My interests include immunology and related fields such as inflammation and cancer biology. I’ve also been recently been getting into bioinformatics due to its ever growing nature. Let's connect and form meaningful connections while we can!`,
-    // Optional: List your projects, they must have `name` and `description`. `link` is optional.
+    about: `Hi! I’m Tushar, currently a 3rd year Biotechnology undergrad at BITS Pilani, Dubai Campus. My interests include immunology and related fields such as inflammation and cancer biology. I’ve also been recently getting into bioinformatics due to its ever-growing nature. Let's connect and form meaningful connections while we can!`,
+    // List your projects
     projects: [
       {
         name: 'Devfolio',
@@ -37,7 +33,7 @@ module.exports = {
         link: 'https://github.com/RyanFitzgerald/devfolio',
       },
     ],
-    // Optional: List your experience, they must have `name` and `description`. `link` is optional.
+    // List your experience
     experience: [
       {
         name: 'Acme Corp',
@@ -55,7 +51,7 @@ module.exports = {
         link: 'https://github.com/RyanFitzgerald/devfolio',
       },
     ],
-    // Optional: List your skills, they must have `name` and `description`.
+    // List your skills
     skills: [
       {
         name: 'Languages & Frameworks',
@@ -64,12 +60,12 @@ module.exports = {
       },
       {
         name: 'Databases',
-        description: 'MongoDB, PostreSQL, MySQL',
+        description: 'MongoDB, PostgreSQL, MySQL',
       },
       {
         name: 'Other',
         description:
-          'Docker, Amazon Web Services (AWS), CI / CD, Microservices, API design, Agile / Scrum',
+          'Docker, Amazon Web Services (AWS), CI/CD, Microservices, API design, Agile/Scrum',
       },
     ],
   },
@@ -131,7 +127,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`, // This color appears on mobile
         display: `minimal-ui`,
-        icon: `src/images/icon.png`,
+        icon: `src/images/icon.png`, // Path to your icon image
       },
     },
   ],
